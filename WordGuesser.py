@@ -1,0 +1,42 @@
+import random
+myList = ["Ram", "Shyam", "Laxmana", "Sita", "Hanuman", "Ravan", "Bali", "Angad", "Akshay", "Jatayu", "Indrajeet"]
+Name=input("Enter your good name please!\n")
+print("Hello ", Name)
+RanWord = random.choice(myList)
+print(RanWord)
+print("Chouse a random character of *RAYAMANA*")
+BlankList = []
+
+for Blank in range(0, len(RanWord)):
+    BlankList.append("_")
+
+
+def WordChecker():
+    for i in range(0, len(RanWord)):
+        char = input("Enter a random alphabet: ")
+        for index, k in enumerate(RanWord, start=0):
+            if k == char:
+                print("Alphabet matched")
+                alphaFiller(index,char)
+            elif index >= len(RanWord):
+                raise ValueError("you lost")
+                
+                
+def alphaFiller(idx,C):
+    BlankList[idx]= C
+    fOutput(BlankList)
+    
+    
+def fOutput(listt):
+        for j in listt:
+            print(j)
+
+                   
+                
+        
+
+
+WordChecker()
+
+
+
