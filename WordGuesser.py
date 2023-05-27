@@ -9,7 +9,7 @@ BlankList = []
 
 for Blank in range(0, len(RanWord)):
     BlankList.append("_")
-
+flag=1
 
 def WordChecker():
     for i in range(0, len(RanWord)):
@@ -18,8 +18,11 @@ def WordChecker():
             if k == char:
                 print("Alphabet matched")
                 alphaFiller(index,char)
-            elif index >= len(RanWord):
-                raise ValueError("you lost")
+            elif index+1 >= len(RanWord):
+                flag=0
+                print("You guessed a wrong characte\nYou lost!")
+          
+       
                 
                 
 def alphaFiller(idx,C):
