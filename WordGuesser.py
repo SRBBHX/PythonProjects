@@ -22,7 +22,7 @@ def WordChecker():
                 flag=0
                 print("You guessed a wrong characte\nYou lost!")
           
-       
+        
                 
                 
 def alphaFiller(idx,C):
