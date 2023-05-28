@@ -1,7 +1,7 @@
 import random
 myList = ["Ram", "Shyam", "Laxmana", "Sita", "Hanuman", "Ravan", "Bali", "Angad", "Akshay", "Jatayu", "Indrajeet"]
-# Name=input("Enter your good name please!\n")
-# print("Hello ", Name)
+Name=input("Enter your good name please!\n")
+print("Hello ", Name)
 RanWord = random.choice(myList)
 print(RanWord)
 print("Chouse a random character of *RAYAMANA*")
@@ -19,16 +19,7 @@ def WordChecker():
                 print("Alphabet matched")
                 alphaFiller(index, char)  
                 print(f"len {len(RanWord) , index}")
-                # if index + 1 == len(RanWord):
-                #     break
-            else:
-                global flag
-                flag = 0
-                print("You guessed a wrong characte\nYou lost!")
-        if flag == 0:
-            break
-            
-                
+
                 
 def alphaFiller(idx,C):
     BlankList[idx]= C
