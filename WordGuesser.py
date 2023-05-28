@@ -16,8 +16,9 @@ def WordChecker():
         char = input("Enter a random alphabet: ")
         for index, k in enumerate(RanWord, start=0):
             if char == k:
+
                 print("Alphabet matched")
-                alphaFiller(index, char)  
+                alphaFiller(index, char)
                 print(f"len {len(RanWord) , index}")
 
                 
@@ -30,12 +31,9 @@ def fOutput(listt):
         for j in listt:
             print(j)
 
-                   
-                
-        
-
-
 WordChecker()
+
+    
 
 
 
